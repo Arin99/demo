@@ -1,0 +1,20 @@
+
+<html>
+<head>
+<title>Simple Application</title>
+</head>
+<body ng-app="myApp" >
+<table ng-controller="myCtrl as ctrl">
+<tr ng-repeat="x in ctrl.records">
+		<td>{{x.id}}</td>
+		<td>{{x.Name}}</td>
+        <td>{{x.Title}}</td>
+		<td>{{x.Date}}</td>
+        <td>{{x.User}}</td>
+</tr>
+</table>
+<script src="library/angular.min.js"></script>
+<script src="script.js"></script>
+<div>
+</body>
+</html>
