@@ -1,0 +1,28 @@
+.header {
+	background: #d2f9cf;
+	
+}
+.image{
+	height:100px;
+	
+}
+.head{
+	text-align:center;
+}
+.left{
+	margin-top:24px;
+	margin-left:24px;
+	height:300px;
+	width:500px;
+}
+.container-main{
+	min-height: 75%;
+	margin-left:70px;
+}
+body{
+	background-image: url("backgrounds.jpg");
+	background-attachment: fixed;
+}
+a {
+    text-decoration: none !important;
+}

@@ -1,12 +1,35 @@
-<h1>{{message.Name}}</h1>
-<table>
-<tr>
-	
-  <td>{{message.id}}</td>
-  <td>{{message.Name}}</td> 
-  <td>{{message.Country}}</td>
-  
-</tr>
-</table>
-{{errormessages}}
 
+<div layout="row">
+	
+	<md-sidenav flex="20" md-is-locked-open="$mdMedia('gt-sm')" >
+		<md-toolbar layout="row" class="md-hue-3">
+				      <div class="md-toolbar-tools">
+				        <span>IT</span>
+				      </div>
+	    </md-toolbar>
+    	<md-nav-list>
+        	<md-list-item class="md-3-line" ng-repeat="x in office.messages">
+				<div class="md-list-item-text" layout="column">
+					<a ng-href="#/office/{{x.id}}"><h3>{{x.Name}}</h3></a>			   			       
+		 		 </div>
+			</md-list-item>
+	 	</md-nav-list>
+	 	
+    </md-sidenav>
+	
+	<div flex="80" >
+		<md-content class="md-padding" layout-xs="column" layout="row" layout-align="center">
+			<div flex-xs flex-gt-xs="50" layout="column">
+				<md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch> 
+					<md-card-title>
+						<md-card-title-text>
+							<span class="md-headline">{{office.message.Name}}</span> 
+							<span class="md-subhead">{{office.message.Content}}</span> 
+						</md-card-title-text> 	
+					</md-card-title> 
+				</md-card>
+			</div>
+		</md-content>
+	</div>
+	
+</div>

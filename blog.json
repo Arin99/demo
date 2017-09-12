@@ -1,17 +1,21 @@
 [{
-            "Name" : "Tcs",
-            "Country" : "Germany",
-            "id" : 1
-        },{
-            "Name" : "Cts",
-            "Country" : "Sweden",
-            "id" : 2
-        },{
-            "Name" : "Infosys",
-            "Country" : "Mexico",
-            "id" : 3
-        },{
-            "Name" : "Wipro",
-            "Country" : "Austria",
-            "id" : 4
-        }]
+	    "name" : "Tcs",
+	    "image" : "Tcs.png",
+	    "description": "Tata Consultancy Services Limited is an Indian multinational information technology service,consulting and business solutions company Headquartered in Mumbai, Maharashtra.It is a subsidiary of the Tata Group and operates in 46 countries",
+	    "id" : 1
+	},{
+	    "name" : "Cts",
+	    "image" : "Cts.jpg",
+	    "description": "Cognizant is an American multinational corporation that provides IT services, including digital, technology, consulting, and operations services. It is headquartered in Teaneck, New Jersey, United States. Cognizant is listed in the NASDAQ-100 and the S&P 500 indices. It was founded as an in-house technology unit of Dun & Bradstreet in 1994,[3] and started serving external clients in 1996.[3]It made an initial public offering in 1998, after a series of corporate splits and restructures of its parent companies. It was the first software services firm listed on the NASDAQ.[3] During the dot com bust, it grew by accepting the application maintenance work that the bigger players were unwilling to perform. Gradually, it ventured into application development, complex systems integration and consulting work. Cognizant had a period of fast growth during the 2000s, becoming a Fortune 500 company in 2011.[4] In 2015, the Fortune magazine named it as the world's fourth most admired IT services company.",
+	    "id" : 2
+	},{
+	    "name" : "Infosys",
+	    "image" : "Infosys.png",
+	    "description": "Through our partnership with Infosys and with this Zero Distance Initiative, we were able to solve this complex problem that the utility’s been facing for some time... Beyond the millions of dollars that we're going to be saving here at APS, the benefit is truly with our end customers in having a system that's going to be flexible and nimble and meet all of their needs.",
+	    "id" : 3
+	},{
+	    "name" : "Wipro",
+	    "image" : "Wipro.jpg",
+	    "description": "Tata Consultancy Services Limited is an Indian multinational information technology service,consulting and business solutions company Headquartered in Mumbai, Maharashtra.It is a subsidiary of the Tata Group and operates in 46 countries",
+	    "id" : 4
+}]

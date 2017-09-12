@@ -1,11 +1,16 @@
 
-<table>
-<tr ng-repeat="x in records">
-  <td>{{x.Name}}</td>
-  <td>{{x.Country}}</td> 
-  <td>{{x.id}}</td>
-  <td><a ng-href="#/office/{{x.id}}">blog</a></td> 
-</tr>
-</table>
-
-
+<div layout="row" layout-wrap layout-padding>
+	<md-card  flex-xs="90" flex-gt-xs="45" ng-repeat="x in blog.records">
+	    <img ng-src= "{{x.image}}" class="md-card-image image" alt="Washed Out">
+		<md-card-title>
+		  <md-card-title-text>
+		    <a ng-href="#/office/{{x.id}}"> <span class="md-headline">{{x.name}}</span></a>
+		  </md-card-title-text>
+		</md-card-title>
+		<md-card-content>
+		  <p>
+		    {{x.description}}
+		  </p>
+		</md-card-content>
+	</md-card>
+</div>

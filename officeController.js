@@ -1,28 +1,27 @@
 app.controller('officeController',['$scope','$http','$routeParams',function officeController ($scope,$http,$routeParams){
-	var scope = $scope;
+	
+	var scope = this;
 	scope.id = $routeParams.id;
 	scope.messages = [] ;
+	scope.message = "";
+	
 	  $http({
 		   method: 'Get',
 		   url : 'office.json'
-	   }).then (function Success(response) {
-		   console.log(JSON.stringify(response));
+	   }).then (function Success(response) {		   
 		      scope.messages = response.data;
-		      $scope.errormessages = response.statusText;
 		      scope.messages.forEach(function(item){
 		  		if (item.id == scope.id){
 		  			scope.message = item;
 		  		}
-		  		//console.log(item.id);
+		  		
 		  	})
 		  	
 	   }, function Error(response) {
-	     $scope.errormessages = response.statusText;
+	     scope.errormessages = response.statusText;
 	 });
 	       
-	
-	
-	//console.log(scope.id);
+
 	
 }]);
 

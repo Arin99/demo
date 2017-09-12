@@ -1,14 +1,16 @@
-var app = angular.module("myApp", ["ngRoute"]);
+var app = angular.module("myApp", ['ngRoute', 'ngMaterial', 'ngSanitize', 'ngAnimate']);
 
 app.config(function($routeProvider) {
     $routeProvider
     .when("/blog", {
         templateUrl : "main.html",
-        controller : "blogController"
+        controller : "blogController",
+        controllerAs : "blog"
     })
     .when("/office/:id", {
         templateUrl : "red.html",
-		controller : "officeController"
+		controller : "officeController",
+		controllerAs : "office"
     })
     
     .otherwise({
